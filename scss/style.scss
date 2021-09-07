@@ -1,2 +1,14 @@
 // @use 'custom';
 @use 'custom';
+
+// Components
+@use 'components/base';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+// Sections
+@use 'sections/heading';
+@use 'sections/navbar';
+@use 'sections/services';
+@use 'sections/tracks';
