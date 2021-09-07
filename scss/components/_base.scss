@@ -1,0 +1,6 @@
+@use '../custom' as *;
+
+html {
+    font-size: 16px;
+    background-color: $background;
+}

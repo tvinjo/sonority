@@ -1,0 +1,31 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+nav {
+    background-color: $background;
+
+    .logo {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    li {
+        color: $white;
+        text-transform: uppercase;
+        margin-left: 16px;
+
+        &:hover {
+            @include hover;
+        }
+    }
+
+        .user-login {
+        margin-left: 94px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .user-login {
+
+        }
+    }
+}
