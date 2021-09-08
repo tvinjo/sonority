@@ -1,6 +1,7 @@
 @use '../custom' as *;
 
-html {
+body {
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     background-color: $background;
 }

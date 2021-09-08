@@ -1,0 +1,15 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+button {
+    position: relative;
+    padding: 17px 33px;
+    margin: 0;
+    border: 0.1rem solid $black;
+    @include button-gradient;
+    color: $white;
+
+    i {
+        padding-right: 15px;
+    }
+}

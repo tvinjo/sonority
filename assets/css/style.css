@@ -11112,9 +11112,83 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
+body {
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   background-color: #090710;
+}
+
+button {
+  position: relative;
+  padding: 17px 33px;
+  margin: 0;
+  border: 0.1rem solid #000;
+  background: linear-gradient(to right, #8e31fd, #43a4ee);
+  color: #fff;
+}
+button i {
+  padding-right: 15px;
+}
+
+.card {
+  background-color: transparent;
+  border: 1px solid #dd29fe;
+  border-radius: 10px;
+  width: 361px;
+  height: 78px;
+  margin-bottom: 11px;
+}
+@media (max-width: 575.98px) {
+  .card {
+    display: none;
+  }
+}
+.card span {
+  display: inline-block;
+  margin-left: 17px;
+  margin-right: 32px;
+}
+.card a {
+  text-decoration: none;
+}
+.card .arrow {
+  padding-right: 7px;
+}
+
+.intro {
+  background: url(/images/heading/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding-top: 121px;
+  padding-bottom: 35px;
+  margin: 0;
+}
+h1 .welcome {
+  font-weight: 300;
+}
+h1 .sonority {
+  background: linear-gradient(to right, #dbdbdb, #cf62ff);
+  font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1rem;
+  color: #b4b4b4;
+  padding-bottom: 37px;
+  margin: 0;
+}
+
+.samples {
+  padding-top: 88px;
+  padding-bottom: 166px;
 }
 
 nav {

@@ -13,3 +13,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin sonority-gradient {
+    background: linear-gradient(to right, rgba($secondary, 1), rgba($primary, 1));
+}
+
+@mixin button-gradient {
+    background: linear-gradient(to right, rgba(#8e31fd, 1), rgba(#43a4ee, 1));
+}

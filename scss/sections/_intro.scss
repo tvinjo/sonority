@@ -1,0 +1,40 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.intro {
+    background: url(/images/heading/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-top: 121px;
+    padding-bottom: 35px;
+    margin: 0;
+
+    .welcome {
+        font-weight: 300;
+    }
+
+     .sonority {
+        @include sonority-gradient;
+        font-weight: 800;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+p {
+    font-size: 1rem;
+    color: $gray-100;
+    padding-bottom: 37px;
+    margin: 0;
+}
+
+.samples {
+    padding-top: 88px;
+    padding-bottom: 166px;
+}

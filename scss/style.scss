@@ -6,9 +6,10 @@
 @use 'components/buttons';
 @use 'components/mixins';
 @use 'components/typography';
+@use 'components/cards';
 
 // Sections
-@use 'sections/heading';
+@use 'sections/intro';
 @use 'sections/navbar';
 @use 'sections/services';
 @use 'sections/tracks';

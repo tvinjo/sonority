@@ -1,0 +1,28 @@
+@use '../custom' as *;
+
+.card {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+    background-color: transparent;
+    border: 1px solid $border;
+    border-radius: 10px;
+    width: 361px;
+    height: 78px;
+    margin-bottom: 11px;
+    
+    span {
+        display: inline-block;
+        margin-left: 17px;
+        margin-right: 32px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .arrow {
+        padding-right: 7px;
+    }
+}
