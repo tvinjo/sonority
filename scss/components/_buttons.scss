@@ -1,0 +1,20 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.demo-video {
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+    
+    position: relative;
+    padding: 17px 33px;
+    margin: 0;
+    border: 0.1rem solid $black;
+    @include button-gradient;
+    font-weight: 700;
+    color: $white;
+
+    i {
+        padding-right: 15px;
+    }
+}

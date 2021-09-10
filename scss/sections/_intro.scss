@@ -1,0 +1,57 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.intro {
+    background: url(/images/heading/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    .header {
+        margin: 122px 0 35px;
+        font-size: 4rem;
+        text-transform: uppercase;
+    
+        &-welcome {
+            display: inline-block;
+            // font-size: 4rem;
+            font-weight: 300;
+            color: $white;
+        }
+    
+        &-title {
+            display: inline-block;
+            // font-size: 4rem;
+            font-weight: 800;
+            @include title-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .header {
+            font-size: 2.5rem;
+        }
+    }
+
+    p {
+        display: block;
+        font-size: 1rem;
+        font-weight: 300;
+        color: $secondary;
+    }
+
+    button {
+        margin-bottom: 35px;
+    }
+
+    .samples {
+        margin-top: 88px;
+        margin-bottom: 166px;
+    }
+
+ 
+    
+}
+

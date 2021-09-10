@@ -1,57 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sonority</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sonority</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
- <!-- /////////////////////////////////////////////////////////////////////
+<!-- /////////////////////////////////////////////////////////////////////
                         Navbar Section  
 /////////////////////////////////////////////////////////////////////-->
 
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="images/navbar/LOGO.png" alt="Logo image" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white align-items-center" aria-current="page" href="#">dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">my tracks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">integrations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">help</a>
-                </li>
-            </ul>
-            <div class="nav-item dropdown">
-                <a class="nav-link align-items-center" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="images/navbar/user-login.png" alt="user login" class="user-login">
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-      </div>
-    </div>
+	<div class="container">
+		<a class="navbar-brand" href="#">
+			<img src="images/navbar/LOGO.png" alt="Logo image" class="logo img-fluid">
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link text-white align-items-center" aria-current="page" href="#">dashboard</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white" href="#">my tracks</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white" href="#">integrations</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white" href="#">help</a>
+			</li>
+		</ul>
+		<div class="nav-item dropdown">
+			<a class="nav-link align-items-center" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<img src="images/navbar/user-login.png" alt="user login" class="user-login">
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+				<li>
+					<a class="dropdown-item" href="#">Action</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="#">Another action</a>
+				</li>
+				<li>
+					<hr class="dropdown-divider">
+				</li>
+				<li>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
   </nav>
-                
+
+<!-- /////////////////////////////////////////////////////////////////////
+                        headinggit Section  
+/////////////////////////////////////////////////////////////////////-->
+
+<section class="intro" id="intro">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-10">
+				<h1 class="header lh-1">
+					<span class="header-welcome">Welcome</span>
+					<span class="header-title">To Sonority</span>
+				</h1>	
+				<p class="lh-sm">Forget about spending time and money just to get a voiceover that captivates your viewers. Simply choose from 15 diverse voices and let our cutting-edge AI convert your text into a human-sounding voiceover in under 60 seconds.</p>
+				<button type="button" class="rounded-pill demo-video">
+					<i class="fas fa-play"></i>
+					Demo video
+				</button> 
+			</div>
+			<!-- samples -->
+			<div class="col-lg-4 offset-2 d-flex justify-content-end">
+				<div class="samples">
+			<!-- Microphone -->
+					<div class="card">
+						<a href="">
+							<div class="card-body align-items-center d-flex justify-content-between">
+								<div>
+									<span>
+										<img src="images/heading/samples/Microphone.png" alt="Voice track">
+									</span>
+									Voice Track
+								</div>
+								<div>
+									<img src="images/heading/samples/Arrow.png" class="arrow img-fluid" alt="arrow">
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- Music -->
+					<div class="card">
+						<a href="">
+							<div class="card-body align-items-center d-flex justify-content-between">
+								<div>
+									<span>
+										<img src="images/heading/samples/Track.png" alt="Muisc track">
+									</span>
+									Music Track
+								</div>
+								<div>
+									<img src="images/heading/samples/Arrow.png" class="arrow" alt="arrow">
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- Audio -->
+					<div class="card">
+						<a href="">
+							<div class="card-body align-items-center d-flex justify-content-between">
+								<div>
+									<span>
+										<img src="images/heading/samples/Audio.png" alt="Audio track">
+									</span>
+									Audio Track
+								</div>
+								<div>
+									<img src="images/heading/samples/Arrow.png" class="arrow" alt="arrow">
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- WaveVideo -->
+					<div class="card">
+						<a href="">
+							<div class="card-body align-items-center d-flex justify-content-between">
+								<div>
+									<span>
+										<img src="images/heading/samples/Video.png" alt="WaveVideo">
+									</span>
+									WaveVideo
+								</div>
+								<div>
+									<img src="images/heading/samples/Arrow.png" class="arrow" alt="arrow">
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
