@@ -11118,15 +11118,21 @@ body {
   background-color: #090710;
 }
 
-button {
+.demo-video {
   position: relative;
   padding: 17px 33px;
   margin: 0;
   border: 0.1rem solid #000;
   background: linear-gradient(to right, #8e31fd, #43a4ee);
+  font-weight: 700;
   color: #fff;
 }
-button i {
+@media (max-width: 991.98px) {
+  .demo-video {
+    display: none;
+  }
+}
+.demo-video i {
   padding-right: 15px;
 }
 
@@ -11138,7 +11144,7 @@ button i {
   height: 78px;
   margin-bottom: 11px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .card {
     display: none;
   }
@@ -11161,34 +11167,40 @@ button i {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-h1 {
+.intro .header {
+  margin: 122px 0 35px;
   font-size: 4rem;
   text-transform: uppercase;
-  padding-top: 121px;
-  padding-bottom: 35px;
-  margin: 0;
 }
-h1 .welcome {
+.intro .header-welcome {
+  display: inline-block;
   font-weight: 300;
+  color: #fff;
 }
-h1 .sonority {
-  background: linear-gradient(to right, #dbdbdb, #cf62ff);
+.intro .header-title {
+  display: inline-block;
   font-weight: 800;
+  background: linear-gradient(to right, #dbdbdb, #cf62ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-p {
-  font-size: 1rem;
-  color: #b4b4b4;
-  padding-bottom: 37px;
-  margin: 0;
+@media (max-width: 767.98px) {
+  .intro .header {
+    font-size: 2.5rem;
+  }
 }
-
-.samples {
-  padding-top: 88px;
-  padding-bottom: 166px;
+.intro p {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #dbdbdb;
+}
+.intro button {
+  margin-bottom: 35px;
+}
+.intro .samples {
+  margin-top: 88px;
+  margin-bottom: 166px;
 }
 
 nav {

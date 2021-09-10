@@ -1,7 +1,7 @@
 @use '../custom' as *;
 
 .card {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         display: none;
     }
 

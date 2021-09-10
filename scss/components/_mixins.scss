@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
 }
 
-@mixin sonority-gradient {
+@mixin title-gradient {
     background: linear-gradient(to right, rgba($secondary, 1), rgba($primary, 1));
 }
 
