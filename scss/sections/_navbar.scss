@@ -27,6 +27,13 @@ nav {
 		}
 	}	
 
+	nav-transition {
+		transition: 5s;
+	}
+
+
+
+
 	@include media-breakpoint-down(lg) {
 		li {
 			&:hover {
