@@ -11205,23 +11205,75 @@ body {
 
 nav {
   background-color: #090710;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 nav .logo {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 nav li {
+  font-size: 12px;
+  position: relative;
   color: #fff;
   text-transform: uppercase;
   margin-left: 16px;
 }
-nav li:hover {
+nav li:hover span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #ac29fe;
   height: 3px;
   width: 20px;
 }
+nav nav-transition {
+  transition: 5s;
+}
+@media (max-width: 991.98px) {
+  nav li:hover span {
+    display: none;
+  }
+}
 nav .user-login {
   margin-left: 94px;
+}
+nav .user-form {
+  background-color: #090710;
+  padding: 40px 25px 30px 25px;
+}
+nav .user-form ::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+nav .user-form-width {
+  width: 200px;
+}
+nav .user-form-btn {
+  color: #fff;
+  background-color: #dd29fe;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+nav .user-form-btn-login {
+  margin-left: 14px;
+  margin-right: 6px;
+  padding: 6px 20px;
+}
+nav .user-form-btn-register {
+  padding: 6px 20px;
+}
+@media (max-width: 991.98px) {
+  nav .user-login {
+    margin-left: 0;
+  }
+  nav .user-form {
+    padding: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

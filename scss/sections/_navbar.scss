@@ -2,30 +2,94 @@
 @use '../components/mixins' as *;
 
 nav {
-    background-color: $background;
+	background-color: $background;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
 
-    .logo {
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
+	.logo {
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
 
-    li {
-        color: $white;
-        text-transform: uppercase;
-        margin-left: 16px;
+	li {
+		font-size: 12px;
+		position: relative;
+		color: $white;
+		text-transform: uppercase;
+		margin-left: 16px;
 
-        &:hover {
-            @include hover;
-        }
-    }
+		&:hover {
+			span {
+				display: block;
+				@include hover;
+			}
+		}
+	}	
 
-        .user-login {
-        margin-left: 94px;
-    }
+	nav-transition {
+		transition: 5s;
+	}
 
-    @include media-breakpoint-down(lg) {
-        .user-login {
 
-        }
-    }
+
+
+	@include media-breakpoint-down(lg) {
+		li {
+			&:hover {
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	.user-login {
+		margin-left: 94px;
+	}
+
+////////////////////////////Form///////////////////////////////
+	.user-form {
+		background-color: $background;
+		padding: 40px 25px 30px 25px;
+		
+		::placeholder {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 12px;
+		}
+
+		&-width {
+			width: 200px;
+		}
+
+		&-btn {
+			color: $white;
+			background-color: $border;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 12px;
+		
+
+			&-login {
+					margin-left: 14px;
+					margin-right: 6px;
+					padding: 6px 20px;
+			}
+
+			&-register {
+					padding: 6px 20px;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		.user-login {
+			margin-left: 0;
+		}
+
+		.user-form {
+			padding: 30px;
+		}
+	}
 }
