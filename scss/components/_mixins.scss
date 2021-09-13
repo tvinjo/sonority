@@ -1,6 +1,9 @@
 @use '../custom' as *; 
 
 @mixin hover {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: $hover;
     height: 3px;
     width: 20px;
