@@ -1,10 +1,8 @@
 @use '../custom' as *;
 
-.card {
-    @include media-breakpoint-down(lg) {
-        display: none;
-    }
 
+// Intro Section
+.card-intro {
     background-color: transparent;
     border: 1px solid $border;
     border-radius: 10px;
@@ -26,3 +24,133 @@
         padding-right: 7px;
     }
 }
+
+// tracks section
+.card-tracks {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 262px;
+    height: 262px;
+    border: none;
+
+    h5 {
+        font-family: 'Open Sans', sans-serif;
+        color: $white;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        width: 103px;
+        border-radius: 5px;
+        margin-top: 8px;
+        margin-left: 10px;
+        padding: 9px 0 8px;
+    }
+    &-body {
+        position: relative;
+        color: $white;
+        font-size: 0.9375rem;
+        top: 162px;
+        left: 31px;
+
+        i {
+            font-size: 2.5rem;
+            margin-right: 10px;
+        }
+
+        p {
+            font-weight: 300;
+            margin-bottom: 0;
+        
+            span {
+                font-weight: 800;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+// voice tracks
+.card-voice {
+    background: url("/images/tracks/voice\ track\ bg.png");
+  
+    h5 {
+        background-color: $voice;   
+    }
+}
+
+// music tracks
+.card-music {
+    background: url("/images/tracks/music\ track\ bg.png");
+
+    h5 {
+        background-color: #2280d0;
+    }
+}
+
+// audio tracks
+.card-audio {
+    background: url("/images/tracks/audio\ track\ bg.png");
+
+    h5 {
+        background-color: #5611b9;
+    }
+}
+
+// WaveVideo
+.card-video {
+    background: url("/images/tracks/wavevideo\ bg.png");
+}
+    h5 {
+        background-color: #00b1b3;
+    }
+
+// .card-tracks {
+//     background: url("/images/voice\ track\ bg.png");
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     width: 262px;
+//     height: 262px;
+//     border: none;
+
+//     h5 {
+//         font-family: 'Open Sans', sans-serif;
+//         color: $white;
+//         font-size: 0.9375rem;
+//         font-weight: 400;
+//         text-transform: capitalize;
+//         margin-bottom: 0;
+//         width: 103px;
+//         // height: 28px;
+//         background-color: #b60085;
+//         border-radius: 5px;
+//         margin-top: 8px;
+//         margin-left: 10px;
+//         padding: 9px 0 8px;
+//     }
+
+//     &-body {
+//         position: relative;
+//         color: $white;
+//         font-size: 0.9375rem;
+//         top: 162px;
+//         left: 31px;
+
+//         i {
+//             font-size: 2.5rem;
+//             margin-right: 10px;
+//         }
+
+//         p {
+//             font-weight: 300;
+//             margin-bottom: 0;
+        
+//             span {
+//                 font-weight: 800;
+//                 margin-left: 0;
+//             }
+//         }
+//     }
+// }

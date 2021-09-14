@@ -1,0 +1,28 @@
+@use '../custom' as *;
+
+.tracks {
+    h2 {
+        font-size: 2.625rem;
+        font-weight: 600;
+        color: $white;
+        text-transform: capitalize;
+        margin-bottom: 62px;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    a {
+        text-transform: capitalize;
+        font-size: 1.3125rem;
+        font-weight: 800;
+        color: $white;
+        text-decoration: none;
+
+        i {
+            color: $primary;
+            margin-left: 17px;
+        }
+    }
+}
