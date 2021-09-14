@@ -11136,7 +11136,7 @@ body {
   padding-right: 15px;
 }
 
-.card {
+.card-intro {
   background-color: transparent;
   border: 1px solid #dd29fe;
   border-radius: 10px;
@@ -11144,21 +11144,86 @@ body {
   height: 78px;
   margin-bottom: 11px;
 }
-@media (max-width: 991.98px) {
-  .card {
-    display: none;
-  }
-}
-.card span {
+.card-intro span {
   display: inline-block;
   margin-left: 17px;
   margin-right: 32px;
 }
-.card a {
+.card-intro a {
   text-decoration: none;
 }
-.card .arrow {
+.card-intro .arrow {
   padding-right: 7px;
+}
+
+.card-tracks {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 262px;
+  height: 262px;
+  border: none;
+}
+.card-tracks h5 {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  width: 103px;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-left: 10px;
+  padding: 9px 0 8px;
+}
+.card-tracks-body {
+  position: relative;
+  color: #fff;
+  font-size: 0.9375rem;
+  top: 162px;
+  left: 31px;
+}
+.card-tracks-body i {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+.card-tracks-body p {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.card-tracks-body p span {
+  font-weight: 800;
+  margin-left: 0;
+}
+
+.card-voice {
+  background: url("/images/tracks/voice track bg.png");
+}
+.card-voice h5 {
+  background-color: #b60085;
+}
+
+.card-music {
+  background: url("/images/tracks/music track bg.png");
+}
+.card-music h5 {
+  background-color: #2280d0;
+}
+
+.card-audio {
+  background: url("/images/tracks/audio track bg.png");
+}
+.card-audio h5 {
+  background-color: #5611b9;
+}
+
+.card-video {
+  background: url("/images/tracks/wavevideo bg.png");
+}
+
+h5 {
+  background-color: #00b1b3;
 }
 
 .intro {
@@ -11184,11 +11249,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 767.98px) {
-  .intro .header {
-    font-size: 2.5rem;
-  }
-}
 .intro p {
   display: block;
   font-size: 1rem;
@@ -11201,6 +11261,16 @@ body {
 .intro .samples {
   margin-top: 88px;
   margin-bottom: 166px;
+}
+@media (max-width: 767.98px) {
+  .intro .header {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .intro .card {
+    display: none;
+  }
 }
 
 nav {
@@ -11274,6 +11344,28 @@ nav .user-form-btn-register {
   nav .user-form {
     padding: 30px;
   }
+}
+
+.tracks h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 62px;
+}
+.tracks h2 span {
+  color: #cf62ff;
+}
+.tracks a {
+  text-transform: capitalize;
+  font-size: 1.3125rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+.tracks a i {
+  color: #cf62ff;
+  margin-left: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
