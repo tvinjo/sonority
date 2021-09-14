@@ -1,0 +1,70 @@
+@use '../custom' as *;
+
+.portfolio {
+    margin-top: 180px;
+    // position: relative;
+
+    &-spacing {
+        margin-bottom: 109px;
+    }
+
+    h4 {
+        font-size: 1.0625rem;
+        font-weight: 400;
+        color: $purple-200;
+        margin-top: 134px;
+    }
+
+    h3 {
+        font-size: 2.625rem;
+        font-weight: 400;
+        color: $white;
+    }
+
+    p {
+        font-size: 1.3125rem;
+        font-weight: 200;
+        color: $gray-200;
+    }
+
+    &-img-right {
+        position: relative;
+        right: -320px;
+    }
+
+    &-img-left {
+        position: relative;
+        left: -320px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        h4 {
+            font-size: 1rem;
+            margin-top: 0;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+        
+        p {
+            font-size: 1.3rem;
+        }
+
+        &-img-right {
+            position: relative;
+            right: -120px;
+            top: 40px;
+        }
+    
+        &-img-left {
+            position: relative;
+            left: -120px;
+            top: 40px;
+        }
+    }
+}
+
+
+
+
