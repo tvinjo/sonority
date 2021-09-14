@@ -11116,6 +11116,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   background-color: #090710;
+  overflow-x: hidden;
 }
 
 .demo-video {
@@ -11221,8 +11222,7 @@ body {
 .card-video {
   background: url("/images/tracks/wavevideo bg.png");
 }
-
-h5 {
+.card-video h5 {
   background-color: #00b1b3;
 }
 
@@ -11343,6 +11343,59 @@ nav .user-form-btn-register {
   }
   nav .user-form {
     padding: 30px;
+  }
+}
+
+.portfolio {
+  margin-top: 180px;
+}
+.portfolio-spacing {
+  margin-bottom: 109px;
+}
+.portfolio h4 {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: #f5a2ff;
+  margin-top: 134px;
+}
+.portfolio h3 {
+  font-size: 2.625rem;
+  font-weight: 400;
+  color: #fff;
+}
+.portfolio p {
+  font-size: 1.3125rem;
+  font-weight: 200;
+  color: #dbdbdb;
+}
+.portfolio-img-right {
+  position: relative;
+  right: -320px;
+}
+.portfolio-img-left {
+  position: relative;
+  left: -320px;
+}
+@media (max-width: 991.98px) {
+  .portfolio h4 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .portfolio h3 {
+    font-size: 2rem;
+  }
+  .portfolio p {
+    font-size: 1.3rem;
+  }
+  .portfolio-img-right {
+    position: relative;
+    right: -120px;
+    top: 40px;
+  }
+  .portfolio-img-left {
+    position: relative;
+    left: -120px;
+    top: 40px;
   }
 }
 
