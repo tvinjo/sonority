@@ -11385,7 +11385,7 @@ nav .user-form-btn-register {
   left: -320px;
 }
 @media (max-width: 991.98px) {
-  .portfolio .portfolio {
+  .portfolio {
     margin-top: 50px;
   }
   .portfolio h4 {
@@ -11410,9 +11410,6 @@ nav .user-form-btn-register {
   }
 }
 @media (max-width: 767.98px) {
-  .portfolio .portfolio {
-    margin-top: 70px;
-  }
   .portfolio-img-right {
     position: relative;
     right: 0;
