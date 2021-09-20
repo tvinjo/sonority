@@ -6,3 +6,9 @@ body {
     background-color: $background;
     overflow-x: hidden;
 }
+
+html {
+    @include media-breakpoint-down(lg) {
+        overflow-x: hidden;
+    }
+}

@@ -6,14 +6,13 @@
         font-weight: 600;
         color: $white;
         text-transform: capitalize;
-        margin-bottom: 62px;
 
         span {
             color: $primary;
         }
     }
 
-    a {
+     a {
         text-transform: capitalize;
         font-size: 1.3125rem;
         font-weight: 800;
@@ -23,6 +22,30 @@
         i {
             color: $primary;
             margin-left: 17px;
+        }
+
+        .tracks-cards {
+            margin-top: 62px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        h2 {
+            font-size: 2rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+
+        &-cards {
+            margin-top: 50px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-tracks {
+            margin-bottom: 50px;
         }
     }
 }
