@@ -11149,6 +11149,8 @@ body {
   display: inline-block;
   margin-left: 17px;
   margin-right: 32px;
+  min-width: 48px;
+  text-align: center;
 }
 .card-intro a {
   text-decoration: none;
