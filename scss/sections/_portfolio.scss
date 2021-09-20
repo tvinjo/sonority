@@ -1,5 +1,5 @@
 @use '../custom' as *;
-
+@use '../components/mixins' as *;
 .portfolio {
     margin-top: 180px;
     // position: relative;
@@ -12,7 +12,7 @@
         font-size: 1.0625rem;
         font-weight: 400;
         color: $purple-200;
-        margin-top: 134px;
+        margin-top: 60px;
     }
 
     h3 {
@@ -38,6 +38,10 @@
     }
 
     @include media-breakpoint-down(lg) {
+        .portfolio {
+            margin-top: 50px;
+        }
+
         h4 {
             font-size: 1rem;
             margin-top: 0;
@@ -61,6 +65,24 @@
             position: relative;
             left: -120px;
             top: 40px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .portfolio {
+            margin-top: 70px;
+        }
+
+        &-img-right {
+            position: relative;
+            right: 0;
+            top: 30px;
+        }
+
+        &-img-left {
+            position: relative;
+            left: 0;
+            top: -35px;
         }
     }
 }

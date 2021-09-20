@@ -11364,7 +11364,7 @@ nav .user-form-btn-register {
   font-size: 1.0625rem;
   font-weight: 400;
   color: #f5a2ff;
-  margin-top: 134px;
+  margin-top: 60px;
 }
 .portfolio h3 {
   font-size: 2.625rem;
@@ -11385,6 +11385,9 @@ nav .user-form-btn-register {
   left: -320px;
 }
 @media (max-width: 991.98px) {
+  .portfolio .portfolio {
+    margin-top: 50px;
+  }
   .portfolio h4 {
     font-size: 1rem;
     margin-top: 0;
@@ -11404,6 +11407,21 @@ nav .user-form-btn-register {
     position: relative;
     left: -120px;
     top: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .portfolio .portfolio {
+    margin-top: 70px;
+  }
+  .portfolio-img-right {
+    position: relative;
+    right: 0;
+    top: 30px;
+  }
+  .portfolio-img-left {
+    position: relative;
+    left: 0;
+    top: -35px;
   }
 }
 
